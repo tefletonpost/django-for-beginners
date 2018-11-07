@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<style>
+    header,
+    main,
+    footer {
+        padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+
+        header,
+        main,
+        footer {
+            padding-left: 0;
+        }
+    }
+
+    .top-nav {
+        box-shadow: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+    }
+
+    #index-banner {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+        background: #0B7F9E;
+        color: white;
+    }
+
+    .row {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media only screen and (min-width: 1201px) {
+        .row .col.offset-xl1 {
+            margin-left: 8.3333333333%;
+        }
+    }
+
+    @media only screen and (min-width: 1201px) {
+        .row .col.xl7 {
+            width: 58.3333333333%;
+            margin-left: auto;
+            left: auto;
+            right: auto;
+        }
+    }
+
+    @media only screen and (min-width: 601px) {
+        .row .col.offset-m1 {
+            margin-left: 8.3333333333%;
+        }
+    }
+
+    @media only screen and (min-width: 601px) {
+        .row .col.m8 {
+            width: 66.6666666667%;
+            margin-left: auto;
+            left: auto;
+            right: auto;
+        }
+    }
+    p {
+        font-size: 1.3rem;
+        word-spacing: 0.2rem;
+    }
+
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $('#sidenav-1').sidenav({ edge: 'left' });
+    });
+
+</script>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+
+        <ul id="nav-mobile" id="sidenav-1" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+            <li>
+                <div class="userView">
+                    <img class="responsive-img"  src="https://caktus-website-production-2015.s3.amazonaws.com/media/blog-images/django-logo.gif">
+                </div>
+            </li>
+
+            <li class="bold active"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-teal" tabindex="0">CSS</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="color.html">Color</a></li>
+                                <li><a href="grid.html">Grid</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="bold"><a href="mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <div class="section" id="index-banner">
+            <div class="container" style="width:100%;">
+                <div class="row" style="margin-bottom: 0; margin-top: -15px;">
+                    <div class="col s12 m8 offset-m1 xl7 offset-xl1 center-on-small-only">
+                        <h1 class="header">Getting Started with Django</h1>
+                        <h4 class="light">Learn how to easily start using Django for your web apps</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m9 l10">
+                <div id="introduction" class="section scrollspy" style="margin-left: 8.3333333333%">
+                    <p>Welcome to your no nonsense guide to programming. In this tutorial series we will be learning how to make a web app.</p>
+                    <p>This tutorial takes you from the absolute beginning to building a “Job Listing Site” application in Django. I am sure you will appreciate it if you are just getting with Django.
+                        The tutorials have been arranged in the right order ready for you to watch. Don’t forget to let us know what you build from this amazing course. Write to us in the comment box if you need any help.
+                    </p>
+                    <div class="video-container">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/1TugFJ1sfF8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div id="structure" class="section scrollspy">
+                    <p>Content </p>
+                </div>
+
+                <div id="initialization" class="section scrollspy">
+                    <p>Content </p>
+                </div>
+            </div>
+            <div class="col hide-on-small-only m3 l2">
+                <ul class="section table-of-contents">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#structure">Structure</a></li>
+                    <li><a href="#initialization">Intialization</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
